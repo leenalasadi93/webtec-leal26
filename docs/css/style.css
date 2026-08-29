@@ -1,12 +1,6 @@
-body {
-    margin: 8px auto;
-    max-width: 600px;
-}
-
-h1 {
-    border-bottom: 1px double #ccc;
-}
-
-h2 {
-    border-bottom: 1px solid #ccc;
-}
+@import url("normalize.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("main.css");
+@import url("article.css");
+@import url("figure.css");
