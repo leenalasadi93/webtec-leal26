@@ -1,32 +1,20 @@
 # Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
-<<<<<<< HEAD
 
-=======
->>>>>>> 11d5b1c09412672ab9411949437073a94a41f644
 on:
   push:
     branches: ["main"]
   workflow_dispatch:
-<<<<<<< HEAD
 
-=======
->>>>>>> 11d5b1c09412672ab9411949437073a94a41f644
 permissions:
   contents: read
   pages: write
   id-token: write
-<<<<<<< HEAD
 
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
-=======
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
->>>>>>> 11d5b1c09412672ab9411949437073a94a41f644
 jobs:
   deploy:
     environment:
@@ -41,11 +29,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-<<<<<<< HEAD
-          path: 'public'
-=======
-          path: 'docs'
->>>>>>> 11d5b1c09412672ab9411949437073a94a41f644
+          path: docs
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
